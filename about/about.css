@@ -1,0 +1,51 @@
+body{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 23px;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+.yelow-character {
+    display: inline-block;
+    font-size: 70px;
+    background-color: #fdfa3d;
+    padding: 0 20px;
+}
+.pragraph-link{ 
+    
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#skills-title {
+    width: max-content;
+}
+#skills-pannel{ 
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+.skill-icon img{ 
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+h1{ 
+    font-weight: 400;
+}
+h2{ 
+    font-size: 35px;
+    font-weight: 400;
+}
+hr{
+    width: 50%;
+    margin:20px auto ;
+}

@@ -29,9 +29,8 @@
     right: 5%;
     top: 0;
     list-style: none;
-    width: 30%;
+    width:  30%;
     min-width: 300px;
-    max-width: 450px;
     display: flex;
     align-items: stretch;
 }
@@ -105,4 +104,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#note{ 
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

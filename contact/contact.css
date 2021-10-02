@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important;
+
+    font-size: 23px;
+}
+h1{ 
+    font-weight: 400;
+}
+h2{ 
+    font-size: 35px;
+    font-weight: 400;
+}
+.yelow-character {
+    display: inline-block;
+    font-size: 70px;
+    background-color: #fdfa3d;
+    padding: 0 20px;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+hr {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.socials ul {
+    list-style: none;
+}
+
+.socials li {
+    margin: 20px 0;
+    border-radius: 3px;
+    padding: 4px 7px;
+    width: max-content;
+
+}
+
+.socials a{ 
+    color: white; 
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.socials .fb {
+    background-color: #4267B2;
+}
+
+.socials .insta {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+
+
