@@ -83,12 +83,14 @@
     list-style: none;
     background-color: black;
     z-index: 1;
-    
+}
+.header ul li{ 
+    padding: 10px 5px;
 }
 .header ul li a{ 
+    display: block;
     text-decoration: none;
     color: white;
-    padding: 6px 3px;
     font-weight: 400;
 }
 
@@ -117,15 +119,19 @@
     font-size: 29vw;
     line-height: 90%;
 }
+
+#hello #under-hello {
+    font-size: 4.3vw;
+}
 @media (min-width : 500px){ 
     #hello #hello-txt { 
         font-size: 14vw; 
     }
+    #hello #under-hello{ 
+        font-size: 2.1vw;
+    }
 }
 
-#hello #under-hello {
-    font-size: 2.2vw;
-}
 
 #hello #main {
     padding: 20px;
