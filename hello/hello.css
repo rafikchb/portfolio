@@ -17,9 +17,9 @@
     background-color: inherit;
     max-height: 200px;
     height: 10vh;
-    width: 100%;
-}
-
+    z-index: 2;
+} 
+/* 
 .header ul {
     padding-top: 20px;
     height: 100%;
@@ -53,6 +53,51 @@
 .header ul li a:hover{ 
     background-color: black;
     color: white;
+} */
+
+.align-right{ 
+    text-align: right;
+}
+
+.burger{ 
+    width: 15vw;
+    height: 15vw;
+    min-width: 30px;
+    max-width: 45px;
+    min-height: 30px;
+    max-height: 45px;
+    padding: 6px;
+    background-color: inherit;
+    border: none;
+}
+
+.burger img{ 
+    display: block;
+    height: 100%;
+    width: 100%;
+} 
+
+.header ul{ 
+    border: 1px solid #fdfa3d;
+    background-color: inherit;
+    list-style: none;
+    background-color: black;
+    z-index: 1;
+    
+}
+.header ul li a{ 
+    text-decoration: none;
+    color: white;
+    padding: 6px 3px;
+    font-weight: 400;
+}
+
+.header li+li {
+    border-top: 1px solid yellow;
+    background-color: black;
+}
+.hidden{ 
+    display: none;
 }
 
 
@@ -68,17 +113,14 @@
 
 
 
-
-
-
-
-
-
-
-
 #hello #hello-txt {
-    font-size: 14vw;
+    font-size: 29vw;
     line-height: 90%;
+}
+@media (min-width : 500px){ 
+    #hello #hello-txt { 
+        font-size: 14vw; 
+    }
 }
 
 #hello #under-hello {
