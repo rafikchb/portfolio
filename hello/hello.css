@@ -15,9 +15,7 @@
 .header {
     position: relative;
     background-color: inherit;
-    min-height: 50px;
     max-height: 200px;
-    min-width: 900px;
     height: 10vh;
     width: 100%;
 }
@@ -30,7 +28,6 @@
     top: 0;
     list-style: none;
     width:  30%;
-    min-width: 300px;
     display: flex;
     align-items: stretch;
 }
