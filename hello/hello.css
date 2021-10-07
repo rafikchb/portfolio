@@ -134,15 +134,12 @@ body {
     } 
 }
 
-
-
-#hello #hello #hello-txt {
+ #hello #hello-txt {
     font-size: 25vw;
-    
     line-height: 90%;
 }
 
-#hello #hello #under-hello {
+ #hello #under-hello {
     font-size: 4vw;
 }
 
