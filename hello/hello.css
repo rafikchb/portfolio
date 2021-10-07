@@ -1,8 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
- body {
+
+:root {
+    --break-point: 500px;
+}
+
+body {
     font-family: 'Roboto', sans-serif !important;
     font-weight: 300 !important;
     height: 100vh;
@@ -12,131 +18,148 @@
     color: white;
 }
 
-.header {
+#hello .header {
     position: relative;
     background-color: inherit;
     max-height: 200px;
     height: 10vh;
-    z-index: 2;
-} 
-/* 
-.header ul {
-    padding-top: 20px;
-    height: 100%;
-    position: absolute;
-    right: 5%;
-    top: 0;
-    list-style: none;
-    width:  30%;
+}
+
+#hello #burger-container {
     display: flex;
-    align-items: stretch;
+    justify-content: right;
 }
 
-.header ul li {
-    flex: 1 1 0;
+@media (min-width: 500px) {
+    #hello #burger-container {
+        display: none;
+    }
 }
 
-.header ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: inherit;
-    transition: background-color 0.35s;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 1.5vw;
-}
-
-
-.header ul li a:hover{ 
-    background-color: black;
-    color: white;
-} */
-
-.align-right{ 
-    text-align: right;
-}
-
-.burger{ 
+#hello #burger-container .burger {
+    margin: 5px 8px;
+    display: block;
     width: 15vw;
     height: 15vw;
     min-width: 30px;
     max-width: 45px;
     min-height: 30px;
     max-height: 45px;
-    padding: 6px;
-    background-color: inherit;
     border: none;
+    background-color: transparent;
 }
 
-.burger img{ 
+#hello #burger-container .burger.open::after {
     display: block;
+    background-image: url(/image/menu.png);
     height: 100%;
     width: 100%;
-} 
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
 
-.header ul{ 
+#hello #burger-container .burger.close::before {
+    display: block;
+    background-image: url(/image/close.png);
+    height: 100%;
+    width: 100%;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+
+#hello .header ul {
     border: 1px solid #fdfa3d;
     background-color: inherit;
     list-style: none;
     background-color: black;
-    z-index: 1;
+    z-index: 2;
 }
-.header ul li{ 
+
+#hello .header ul li {
     padding: 10px 5px;
 }
-.header ul li a{ 
+
+#hello .header ul li a {
     display: block;
     text-decoration: none;
     color: white;
     font-weight: 400;
 }
 
-.header li+li {
+#hello .header li+li {
     border-top: 1px solid yellow;
     background-color: black;
 }
-.hidden{ 
-    display: none;
+
+@media (min-width :500px) {
+    #hello .header ul {
+        border: none;
+        background-color:inherit;
+        height: 100%;
+        position: absolute;
+        right: 5%;
+        top: 0;
+        list-style: none;
+        width: 30%;
+        display: flex;
+        align-items: stretch;
+    }
+    #hello .header ul li {
+        padding: 0;
+        border: none;
+        background-color: inherit;
+        flex: 1 1 0;
+    }
+    #hello .header ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: inherit;
+        transition: background-color 0.35s;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: calc(20px + 0.5vw);
+    }
+    
+    #hello .header ul li a:hover {
+        background-color: black;
+        color: white;
+    } 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#hello #hello-txt {
-    font-size: 29vw;
+#hello #hello #hello-txt {
+    font-size: 25vw;
+    
     line-height: 90%;
 }
 
-#hello #under-hello {
-    font-size: 4.3vw;
+#hello #hello #under-hello {
+    font-size: 4vw;
 }
-@media (min-width : 500px){ 
-    #hello #hello-txt { 
-        font-size: 14vw; 
+
+@media (min-width: 500px) {
+    #hello #hello-txt {
+        font-size: 14vw;
     }
-    #hello #under-hello{ 
+    #hello #under-hello {
         font-size: 2.1vw;
     }
 }
-
 
 #hello #main {
     padding: 20px;
     margin: auto;
     background-color: black;
+    max-width: 100vw;
 }
 
 #hello .center-h {
@@ -150,10 +173,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#note{ 
+
+#note {
     font-weight: 500;
     color: black;
     position: absolute;
     bottom: 0;
     left: 0;
+} 
+.hidden {
+    display: none;
+}
+
+.align-right {
+    text-align: right;
 }

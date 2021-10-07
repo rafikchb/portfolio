@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -17,8 +15,9 @@
 <body>
     <div id='hello'>
         <nav class="header">
-            <div class="align-right burger-container">
-                <button class="burger" id="burger"><img src="/image/menu.png" alt="burger-icon"></button>
+            <div class="align-right" id='burger-container'>
+                <button class="burger open" id="burger">
+                </button>
             </div>
             <ul id="navMenu" class="hidden">
                 <li><a href="/about/about.html">About me</a></li>
@@ -27,11 +26,14 @@
         </nav>
 
         <div id="main" class="center">
-            <h1 id='hello-txt' class="center-h">HELLO</h1>
-            <p id='under-hello' class="center-h">i am software engineer and a web developer</p>
+            <div class="hello">
+                <h1 id='hello-txt' class="center-h">HELLO</h1>
+                <p id='under-hello' class="center-h">i am software engineer and a web developer</p>
+            </div>
         </div>
     </div>
     <div id='note'>still working on this</div>
 </body>
 <script src="/hello/hello.js"></script>
+
 </html>
