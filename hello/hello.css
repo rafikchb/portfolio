@@ -39,11 +39,11 @@ body {
 #hello #burger-container .burger {
     margin: 5px 8px;
     display: block;
-    width: 15vw;
-    height: 15vw;
-    min-width: 30px;
+    width: 10vw;
+    height: 10vw;
+    min-width: 20px;
     max-width: 45px;
-    min-height: 30px;
+    min-height: 20px;
     max-height: 45px;
     border: none;
     background-color: transparent;
