@@ -7,18 +7,18 @@ body {
     font-family: 'Roboto', sans-serif !important;
     font-weight: 300 !important;
 
-    font-size: 23px;
+    font-size: calc(1vw + 0.8em);
 }
 h1{ 
     font-weight: 400;
 }
 h2{ 
-    font-size: 35px;
+    font-size: calc(1vw + 1.3em);
     font-weight: 400;
 }
 .yelow-character {
     display: inline-block;
-    font-size: 70px;
+    font-size: calc(1vw + 1.8em);
     background-color: #fdfa3d;
     padding: 0 20px;
 }
@@ -27,6 +27,14 @@ h2{
     width: 80vw;
     margin: auto;
 }
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
 
 ul {
     list-style-position: inside;
